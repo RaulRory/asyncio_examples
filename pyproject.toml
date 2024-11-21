@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "asyncio-examples"
+version = "0.1.0"
+description = "Manter exemplos de código utilizando asyncIO"
+authors = ["Raul Rory <raulrory@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.5"}
+aiohttp = "^3.11.6"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
